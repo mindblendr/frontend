@@ -17,7 +17,7 @@ export default {
 	},
 	methods: {
 		async getPosts() {
-			this.data = await axios.get("https://testeb.ozlive.io/");
+			this.data = await axios.get("http://phpbackendapp001-env.eba-fu6eajia.ap-northeast-1.elasticbeanstalk.com/");
 			console.log(this.data);
 		},
 	},
