@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ data }}</h1>
+    <p>{{ data }}</p>
     <button @click="getPosts">Get posts</button>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 	},
 	methods: {
 		async getPosts() {
-			this.data = await axios.get("http://phpbackendapp001-env.eba-fu6eajia.ap-northeast-1.elasticbeanstalk.com/");
+			this.data = await axios.get("https://testeb.ozlive.io/");
 			console.log(this.data);
 		},
 	},
