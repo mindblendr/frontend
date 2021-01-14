@@ -18,7 +18,7 @@ export default {
 	methods: {
 		async getPosts() {
 			this.data = await axios.get("https://testeb.ozlive.io/");
-			console.log(this.data);
+			console.log({test: this.data});
 		},
 	},
 };
